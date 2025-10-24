@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Piedra, Papel o Tijera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #f6c700;
+    }
+    button {
+      background: #f6c700;
+      color: #0e0e0e;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #ffe44d;
+    }
+    #results {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <h1>Rock Paper Scissors</h1>
+  <div>
+    <button id="rock">🪨 Rock</button>
+    <button id="paper">📄 Paper</button>
+    <button id="scissors">✂️ Scissors</button>
+  </div>
+  <div id="results"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
